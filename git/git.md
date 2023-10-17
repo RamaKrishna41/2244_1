@@ -21,4 +21,7 @@ Vagrant up: To make VM up
 Vagrant ssh: To connect to VM
 Vagrant halt: To halt vagrant VM
 vagrant down: TO remove VM
-systemctl status jenkins: To check if Jenkins is running or not
+systemctl status jenkins: To check if Jenkins is running or not \n
+sudo su - jenkins : to switch to jenkins user
+ssh-keygen: creates rsa key pair. Add public key in github. private key in jenkins.
+ssh-keyscan github.com >> ~/.ssh/known_hosts : to add git hub to known hosts.
