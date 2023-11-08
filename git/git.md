@@ -29,11 +29,12 @@ ssh-keyscan github.com >> ~/.ssh/known_hosts : to add git hub to known hosts.
 
 Docker:
 docker pull image_name:tag_name -> to pull docker image from docker hub or repository
-docker run image_name:tag_name -> to run image or create container using images (containers will be dead after the run completed)
+docker run image_name:tag_name -> to create and strt container using images (containers will be dead after the run completed)
 docker ps -> shows running containers
 docker ps -a -> shows both running containers and dead containers
 docker stop container_name -> to stop container
 docker rm container_name -> to remove a container
+docker create image_name -> to create a container but not starting
 
 nginx:
 docker run -p 8080:80 image_name -> to run nginx image (-p is for port mapping from 80 to 8080, 80 is default port)
