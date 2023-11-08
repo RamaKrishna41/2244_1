@@ -1,5 +1,5 @@
 ## Git command details
-git clone -> To clone remote git repository to local system \n
+git clone -> To clone remote git repository to local system
 git pull -> To pull from remote to local repositories
 git status -> to check files that’s been modified in local
 git diff -> to view all modifications in local
@@ -15,6 +15,7 @@ git checkout -b git-branch: to create and switch to new branch 'git-branch'
 Git pull origin branch-name2 : pull from other branch (branch-name2) to your branch
 Git checkout branch-name : to switch to a different branch
 Git push -u origin git-branch : to push from local branch to remote master
+
 Vagrant:
 Tool to create virtual machines using automation
 Vagrant up: To make VM up
@@ -26,6 +27,7 @@ sudo su - jenkins : to switch to jenkins user
 ssh-keygen: creates rsa key pair. Add public key in github. private key in jenkins.
 ssh-keyscan github.com >> ~/.ssh/known_hosts : to add git hub to known hosts.
 
+Docker:
 docker pull image_name:tag_name -> to pull docker image from docker hub or repository
 docker run image_name:tag_name -> to run image or create container using images (containers will be dead after the run completed)
 docker ps -> shows running containers
