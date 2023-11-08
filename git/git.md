@@ -33,3 +33,6 @@ docker run image_name:tag_name -> to run image or create container using images 
 docker ps -> shows running containers
 docker ps -a -> shows both running containers and dead containers
 
+nginx:
+docker run -p 8080:80 image_name -> to run nginx image (-p is for port mapping from 80 to 8080, 80 is default port)
+docker run -d -p 8080:80 image_name -> to run the nginx in backgroung (-d is for detach mode (background))
