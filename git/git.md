@@ -1,5 +1,5 @@
 ## Git command details
-git clone -> To clone remote git repository to local system
+git clone -> To clone remote git repository to local system \n
 git pull -> To pull from remote to local repositories
 git status -> to check files that’s been modified in local
 git diff -> to view all modifications in local
@@ -25,3 +25,9 @@ systemctl status jenkins: To check if Jenkins is running or not \n
 sudo su - jenkins : to switch to jenkins user
 ssh-keygen: creates rsa key pair. Add public key in github. private key in jenkins.
 ssh-keyscan github.com >> ~/.ssh/known_hosts : to add git hub to known hosts.
+
+docker pull image_name:tag_name -> to pull docker image from docker hub or repository
+docker run image_name:tag_name -> to run image or create container using images (containers will be dead after the run completed)
+docker ps -> shows running containers
+docker ps -a -> shows both running containers and dead containers
+
