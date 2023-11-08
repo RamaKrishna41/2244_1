@@ -1,4 +1,4 @@
-## Git command details
+## Git Commands:
 git clone -> To clone remote git repository to local system
 git pull -> To pull from remote to local repositories
 git status -> to check files that’s been modified in local
@@ -16,7 +16,7 @@ Git pull origin branch-name2 : pull from other branch (branch-name2) to your bra
 Git checkout branch-name : to switch to a different branch
 Git push -u origin git-branch : to push from local branch to remote master
 
-Vagrant:
+## Vagrant Commands:
 Tool to create virtual machines using automation
 Vagrant up: To make VM up
 Vagrant ssh: To connect to VM
@@ -27,7 +27,7 @@ sudo su - jenkins : to switch to jenkins user
 ssh-keygen: creates rsa key pair. Add public key in github. private key in jenkins.
 ssh-keyscan github.com >> ~/.ssh/known_hosts : to add git hub to known hosts.
 
-Docker:
+## Docker Commands:
 docker pull image_name:tag_name -> to pull docker image from docker hub or repository
 docker run image_name:tag_name -> to create and strt container using images (containers will be dead after the run completed)
 docker ps -> shows running containers
@@ -37,6 +37,6 @@ docker rm container_name -> to remove a container
 docker create image_name -> to create a container but not starting
 docker start container_name -> to start a container
 
-nginx:
+## nginx Commands with docker:
 docker run -p 8080:80 image_name -> to run nginx image (-p is for port mapping from 80 to 8080, 80 is default port)
 docker run -d -p 8080:80 image_name -> to run the nginx in backgroung (-d is for detach mode (background))
