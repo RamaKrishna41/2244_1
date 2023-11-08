@@ -1,5 +1,5 @@
 ## Git Commands:
-<b>git clone<b> -> To clone remote git repository to local system
+git clone -> To clone remote git repository to local system
 git pull -> To pull from remote to local repositories
 git status -> to check files that’s been modified in local
 git diff -> to view all modifications in local
