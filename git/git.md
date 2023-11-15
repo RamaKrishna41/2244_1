@@ -30,6 +30,7 @@ ssh-keyscan github.com >> ~/.ssh/known_hosts : to add git hub to known hosts.
 ## Docker Commands:
 docker pull image_name:tag_name -> to pull docker image from docker hub or repository
 docker run image_name:tag_name -> to create and strt container using images (containers will be dead after the run completed)
+docker rmi image_name:tag_name -> to reove the image
 docker ps -> shows running containers
 docker ps -a -> shows both running containers and dead containers
 docker stop container_name -> to stop container
