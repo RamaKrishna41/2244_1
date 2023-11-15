@@ -37,8 +37,8 @@ docker stop container_name -> to stop container
 docker rm container_name -> to remove a container
 docker create image_name -> to create a container but not starting
 docker start container_name -> to start a container
-
+docker commit container_id new_imagename -> to create new image from running container
 ## nginx Commands with docker:
 docker run -p 8080:80 image_name -> to run nginx image (-p is for port mapping from 80 to 8080, 80 is default port)
 docker run -d -p 8080:80 image_name -> to run the nginx in backgroung (-d is for detach mode (background))
-docker cp index.html <container_id>:/usr/share/nginx/html/ -> to copy custom index.html file to running container
+docker cp index.html container_id:/usr/share/nginx/html/ -> to copy custom index.html file to running container
