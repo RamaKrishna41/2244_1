@@ -39,8 +39,7 @@ docker create image_name -> to create a container but not starting
 docker start container_name -> to start a container
 docker commit container_id new_imagename -> to create new image from running container
 docker build -t image_name:tag . -f location_of_Dockerfile -> to build a image using Dockerfile. -f location if dockerfile is in different location
-docker tag local-image:tagname new-repo:tagname
-docker push new-repo:tagname
+docker exec -it container_id shell_name -> to access container shell
 
 ## Dockerfile
 # FROM <image-name>:<tag> -> default tag is latest
