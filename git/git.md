@@ -38,6 +38,24 @@ docker rm container_name -> to remove a container
 docker create image_name -> to create a container but not starting
 docker start container_name -> to start a container
 docker commit container_id new_imagename -> to create new image from running container
+docker build -t image_name:tag . -f location_of_Dockerfile -> to build a image using Dockerfile. -f location if dockerfile is in different location
+docker tag local-image:tagname new-repo:tagname
+docker push new-repo:tagname
+
+## Dockerfile
+# FROM <image-name>:<tag> -> default tag is latest
+FROM ubuntu
+
+# RUN apt-get install nginx -> to run command that install a web server
+RUN apt-get update \ 
+    && apt-get install -y nginx
+
+# COPY script.sh /tmp/  -> to copy local file to /tmp/ folder
+# CMD ["bash", "/tmp/script.sh"] -> to run the file
+
+# CMD [] -> executes commands when container started (python hello_world.py -> ["python", "hello_world.py"])
+CMD ["nginx", "-g", "daemon off;"]
+
 ## nginx Commands with docker:
 docker run -p 8080:80 image_name -> to run nginx image (-p is for port mapping from 80 to 8080, 80 is default port)
 docker run -d -p 8080:80 image_name -> to run the nginx in backgroung (-d is for detach mode (background))
